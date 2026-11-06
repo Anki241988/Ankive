@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ankive-purple: #6D00F5;
+  --color-ankive-orange: #FF6500;
+  --color-ankive-navy: #080B2C;
+  --color-ankive-lavender: #F1E7FF;
+  --color-ankive-violet: #A020F0;
+}
