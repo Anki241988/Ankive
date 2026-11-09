@@ -1,19 +1,25 @@
 import { useState } from 'react'
 
-import BusinessCarousel from './components/BuisnessCarousel'
+import Hero from './components/Hero'
+import Navbar from './components/Navbar'
+import FeatureBar from './components/FeatureBar'
+import AudienceSection from './components/AudienceSection'
+
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-     <h1 className="text-4xl font-bold text-purple-600">
-  Welcome to Ankive
-</h1>
+   <Navbar />
 
+<Hero />
 
+<FeatureBar />
 
-   <BusinessCarousel />
+   <AudienceSection />
+  
     </>
   )
 }
