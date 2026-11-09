@@ -1,6 +1,7 @@
 
 import { Store, Check, ArrowRight } from "lucide-react";
 import ownerImage from "../assets/image/shopkeeper.png";
+import { Link } from "react-router-dom";
 
 function BuisnessOwnerCard() {
   return (
@@ -75,8 +76,8 @@ function BuisnessOwnerCard() {
         </ul>
 
         {/* CTA Button */}
-        <a
-          href="#"
+        <Link to='/RegisterBuisness'
+    
           className="inline-flex w-fit items-center justify-center gap-3
                      rounded-full bg-gradient-to-r
                      from-ankive-purple to-fuchsia-600
@@ -88,7 +89,7 @@ function BuisnessOwnerCard() {
         >
           Get Started as Owner
           <ArrowRight className="h-5 w-5" />
-        </a>
+        </Link>
       </div>
     </div>
   );
