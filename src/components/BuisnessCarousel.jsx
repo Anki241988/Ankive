@@ -3,7 +3,7 @@ import { useReducedMotion } from "motion/react";
 import { buisnesses } from "../data/buisnesses";
 import CarouselPlatform from "./CarouselPlatform";
 
-const ROTATION_SECONDS = 12;
+const ROTATION_SECONDS = 18;
 
 const STAGE_WIDTH = 650;
 const STAGE_HEIGHT = 430;
