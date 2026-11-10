@@ -1,6 +1,7 @@
 import ankiveLogo from '../assets/image/ankivelogo.png'
 import {Link} from 'react-router-dom';
 
+
 function Navbar() {
   return (
     <nav className="relative z-50 mx-auto w-full max-w-[1600px] px-4 py-4 sm:px-6 xl:px-12">
@@ -39,6 +40,10 @@ function Navbar() {
           <a href="#" className="nav-link">
             For Businesses
           </a>
+
+            <Link to="/MyRegistrations" className="nav-link">
+            My Applications
+          </Link>
 
           <a href="#" className="nav-link">
             Pricing
