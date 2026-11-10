@@ -8,6 +8,8 @@ const[registrations,setRegistrations]=useState([])
 
 const [editingRegistration, setEditingRegistration] = useState(null);
 
+const [searchTerm, setSearchTerm] = useState("");
+
 
 async function fetchRegistrations() {
 
@@ -120,12 +122,29 @@ setEditingRegistration(registration);
   alert("Registration updated successfully!");
 }
 
+
+const filteredRegistrations = registrations.filter((registration) =>
+  registration.business_name
+    .toLowerCase()
+    .includes(searchTerm.toLowerCase())
+);
+
 return (
   <div className="max-w-4xl mx-auto px-6 py-10">
 
     <h2 className="text-3xl font-bold text-ankive-navy mb-2">MyRegistrations</h2>
 
-    {registrations.map((registration) => (
+    <div className="mb-6">
+  <input
+    type="text"
+    placeholder="Search by business name..."
+    value={searchTerm}
+    onChange={(e) => setSearchTerm(e.target.value)}
+    className="w-full border border-gray-300 rounded-xl px-5 py-3 focus:outline-none focus:border-ankive-purple"
+  />
+</div>
+
+    {filteredRegistrations.map((registration) => (
       <div key={registration.id} className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
 
         <h3 className="text-xl font-bold text-ankive-navy capitalize">{registration.business_name} </h3>

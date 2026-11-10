@@ -23,9 +23,9 @@ function Navbar() {
 
         {/* Desktop navigation links */}
         <div className="hidden items-center gap-1 min-[960px]:flex xl:gap-3">
-          <a href="#" className="nav-link active">
+          <Link to="/" className="nav-link active">
             Home
-          </a>
+          </Link>
 
           <a href="#" className="nav-link">
             Product
