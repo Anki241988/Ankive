@@ -7,21 +7,31 @@ const[buisnessCategory,setBuisnessCategory]=useState('')
 const[city,setCity]=useState('')
 
 
-async function handleRegister(e){
+async function handleRegister(e) {
+  e.preventDefault();
 
-e.preventDefault()
-console.log(buisnessName,buisnessCategory,city)
-
-const { data, error } = await supabase
-  .from("businesses")
-  .insert([
+  const { data, error } = await supabase.rpc(
+    "submit_business_registration",
     {
-      name: buisnessName,
-      category: buisnessCategory,
-      city: city
+      p_name: buisnessName,
+      p_category: buisnessCategory,
+      p_city: city
     }
-  ])
-  .select();
+  );
+
+  if (error) {
+    console.error("Registration failed:", error.message);
+    alert("Registration failed: " + error.message);
+    return;
+  }
+
+  console.log("Registration request ID:", data);
+
+  alert("Business registration submitted! Waiting for Ankive approval.");
+
+  setBuisnessName("");
+  setBuisnessCategory("");
+  setCity("");
 }
 
   return (
