@@ -24,7 +24,7 @@ body {
   width: 100%;
   min-height: 100vh;
 }
-/* Global page background */
+
 body {
   margin: 0;
   min-width: 320px;
@@ -49,7 +49,7 @@ body {
   min-height: 100vh;
 }
 
-/* Navbar links */
+
 .nav-link {
   @apply cursor-pointer whitespace-nowrap rounded-full
              px-2 py-2 text-base font-bold
@@ -57,24 +57,24 @@ body {
          transition-colors duration-300;
 }
 
-/* Hover effect */
+
 .nav-link:hover {
   @apply bg-ankive-lavender text-ankive-purple;
 }
 
-/* Active page */
+
 .nav-link.active {
   @apply bg-ankive-lavender text-ankive-purple;
 }
 
-/* More spacing on larger screens */
+
 @media (min-width: 1280px) {
   .nav-link {
     @apply px-4 text-base;
   }
 }
 
-/* Get Started gradient button */
+
 .get-started-btn {
   display: inline-flex;
   align-items: center;
@@ -100,7 +100,7 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover effect */
+
 .get-started-btn:hover {
   color: white;
   background: linear-gradient(
@@ -115,7 +115,7 @@ body {
 
 
 
-/* Hero buttons container */
+
 .hero-buttons {
   display: flex;
   align-items: center;
@@ -124,7 +124,7 @@ body {
   margin-top: 28px;
 }
 
-/* Common button styling */
+
 .hero-btn {
   display: inline-flex;
   align-items: center;
@@ -150,7 +150,6 @@ body {
   box-shadow: 0 8px 24px rgba(109, 0, 245, 0.25);
 }
 
-/* Customers - White with purple border */
 .customer-btn {
   background: #ffffff;
   border: 2px solid #6D00F5;
@@ -163,7 +162,7 @@ body {
   color: #080B2C;
 }
 
-/* Button text */
+
 .hero-btn-text {
   display: flex;
   flex-direction: column;
@@ -177,7 +176,7 @@ body {
   font-weight: 700;
 }
 
-/* Icons and arrows */
+
 .hero-btn-icon {
   font-size: 26px;
   line-height: 1;
@@ -193,7 +192,7 @@ body {
   color: #6D00F5;
 }
 
-/* Mobile responsiveness */
+
 @media (max-width: 639px) {
   .hero-buttons {
     flex-direction: column;

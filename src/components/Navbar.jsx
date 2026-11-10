@@ -7,7 +7,7 @@ function Navbar() {
     <nav className="relative z-50 mx-auto w-full max-w-[1600px] px-4 py-4 sm:px-6 xl:px-12">
       <div className="flex w-full items-center justify-between gap-2">
 
-        {/* Logo */}
+        
 <a href="#" className="flex shrink-0 items-center gap-2">
   <img
     src={ankiveLogo}
@@ -21,8 +21,8 @@ function Navbar() {
   </span>
 </a>
 
-        {/* Desktop navigation links */}
-        <div className="hidden items-center gap-1 min-[960px]:flex xl:gap-3">
+   
+        <div className="hidden items-center gap-1 xl:flex xl:gap-3">
           <Link to="/" className="nav-link active">
             Home
           </Link>
@@ -55,11 +55,11 @@ function Navbar() {
           </a>
         </div>
 
-        {/* Desktop actions */}
-        <div className="hidden shrink-0 items-center gap-2 min-[960px]:flex xl:gap-4">
+       
+        <div className="hidden shrink-0 items-center gap-2 xl:flex xl:gap-4">
           <select
-            aria-label="Language"
-            defaultValue="DE"
+          
+            defaultValue="EN"
             className="cursor-pointer bg-transparent text-xs text-ankive-navy lg:text-sm"
           >
             <option value="DE">DE</option>
@@ -75,12 +75,11 @@ function Navbar() {
 
           <a href="#" className="get-started-btn">
             Get Started
-             <span aria-hidden="true">→</span>
+             <span >→</span>
              </a>
         </div>
 
-        {/* Mobile / tablet menu placeholder */}
-        <div className="flex items-center justify-center text-2xl text-ankive-navy min-[960px]:hidden">
+        <div className="flex items-center justify-center text-xl text-ankive-navy  xl:hidden">
           ☰
         </div>
 
