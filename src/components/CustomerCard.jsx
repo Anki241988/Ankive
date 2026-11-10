@@ -11,7 +11,7 @@ function CustomerCard() {
                  p-4 shadow-[0_8px_30px_rgba(255,101,0,0.12)]
                  sm:p-5 xl:flex-row xl:items-center xl:gap-5"
     >
-      {/* Left Section - Customer Image */}
+    
       <div className="w-full shrink-0 xl:w-[45%]">
         <img
           src={CustomerImage}
@@ -21,10 +21,10 @@ function CustomerCard() {
         />
       </div>
 
-      {/* Right Section - Customer Content */}
+
       <div className="flex min-w-0 flex-1 flex-col justify-center py-5 xl:py-2">
 
-        {/* Heading */}
+    
         <div className="mb-3 flex items-center gap-3">
           <UsersRound
             className="h-9 w-9 shrink-0 text-ankive-orange"
@@ -36,12 +36,11 @@ function CustomerCard() {
           </h2>
         </div>
 
-        {/* Description */}
         <p className="mb-4 text-base font-medium leading-snug text-ankive-navy">
           Find and order from your favorite local businesses.
         </p>
 
-        {/* Features */}
+     
         <ul className="mb-6 space-y-3">
           <li className="flex items-center gap-3">
             <Check
@@ -74,7 +73,7 @@ function CustomerCard() {
           </li>
         </ul>
 
-        {/* CTA Button */}
+       
         <a
           href="#"
           className="inline-flex w-fit items-center justify-center gap-3

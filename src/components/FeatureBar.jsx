@@ -19,7 +19,7 @@ function FeatureBar() {
     >
       <div className="flex flex-wrap items-center justify-center gap-y-5 xl:flex-nowrap">
 
-        {/* Professional Website */}
+    
         <div className="flex w-full items-center justify-center gap-3 sm:w-1/2 xl:flex-1">
           <Laptop className="h-9 w-9 shrink-0 text-ankive-purple" strokeWidth={2.4} />
           <span className="text-sm font-bold whitespace-nowrap text-ankive-navy xl:text-base">
@@ -29,7 +29,6 @@ function FeatureBar() {
 
         <div className="hidden h-10 w-px bg-ankive-purple/30 xl:block" />
 
-        {/* Online Orders */}
         <div className="flex w-full items-center justify-center gap-3 sm:w-1/2 xl:flex-1">
           <ShoppingCart className="h-9 w-9 shrink-0 text-ankive-orange" strokeWidth={2.4} />
           <span className="text-sm font-bold whitespace-nowrap text-ankive-navy xl:text-base">
@@ -39,7 +38,7 @@ function FeatureBar() {
 
         <div className="hidden h-10 w-px bg-ankive-purple/30 xl:block" />
 
-        {/* Bookings */}
+      
         <div className="flex w-full items-center justify-center gap-3 sm:w-1/2 xl:flex-1">
           <CalendarDays className="h-9 w-9 shrink-0 text-ankive-purple" strokeWidth={2.4} />
           <span className="text-sm font-bold whitespace-nowrap text-ankive-navy xl:text-base">
@@ -49,7 +48,7 @@ function FeatureBar() {
 
         <div className="hidden h-10 w-px bg-ankive-purple/30 xl:block" />
 
-        {/* Easy Management */}
+    
         <div className="flex w-full items-center justify-center gap-3 sm:w-1/2 xl:flex-1">
           <Layers3 className="h-9 w-9 shrink-0 text-ankive-purple" strokeWidth={2.4} />
           <span className="text-sm font-bold whitespace-nowrap text-ankive-navy xl:text-base">
@@ -59,7 +58,7 @@ function FeatureBar() {
 
         <div className="hidden h-10 w-px bg-ankive-purple/30 xl:block" />
 
-        {/* Secure & Reliable */}
+     
         <div className="flex w-full items-center justify-center gap-3 sm:w-1/2 xl:flex-1">
           <ShieldCheck className="h-9 w-9 shrink-0 text-ankive-purple" strokeWidth={2.4} />
           <span className="text-sm font-bold whitespace-nowrap text-ankive-navy xl:text-base">
