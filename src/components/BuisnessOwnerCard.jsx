@@ -75,7 +75,7 @@ function BuisnessOwnerCard() {
         </ul>
 
      
-        <Link to='/RegisterBuisness'
+        <Link to='/Login'
     
           className="inline-flex w-fit items-center justify-center gap-3
                      rounded-full bg-gradient-to-r
