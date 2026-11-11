@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { useReducedMotion } from "motion/react";
+
 import { buisnesses } from "../data/buisnesses";
 import CarouselPlatform from "./CarouselPlatform";
 
@@ -9,7 +9,7 @@ const STAGE_WIDTH = 650;
 const STAGE_HEIGHT = 430;
 
 export default function BuisnessCarousel() {
-  const reduceMotion = useReducedMotion();
+ 
 
   const containerRef = useRef(null);
 
@@ -33,7 +33,7 @@ export default function BuisnessCarousel() {
 
   // Continuous carousel rotation
   useEffect(() => {
-    if (reduceMotion) return;
+    //if (reduceMotion) return;
 
     let frame;
     let previousTime;
@@ -57,7 +57,9 @@ export default function BuisnessCarousel() {
     frame = requestAnimationFrame(animate);
 
     return () => cancelAnimationFrame(frame);
-  }, [reduceMotion]);
+  }, []);
+
+ 
 
   // Scale the whole stage based on available width
   const stageScale = Math.min(

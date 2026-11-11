@@ -28,6 +28,9 @@ body {
       rgba(200, 150, 255, 0.25),
       transparent 45%
     );
+
+     background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 

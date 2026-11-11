@@ -9,7 +9,7 @@ function App() {
 
 
   return (
-    <>
+     <div className="min-h-screen w-full">
    <Navbar />
 
 
@@ -31,7 +31,7 @@ function App() {
    
   
   
-    </>
+    </div>
   )
 }
 
