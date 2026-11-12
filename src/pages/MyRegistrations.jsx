@@ -149,7 +149,7 @@ return (
 
         <h3 className="text-xl font-bold text-ankive-navy capitalize">{registration.business_name} </h3>
         <p className="text-xl font-bold text-ankive-navy capitalize">{registration.city} </p>
-        <p className="inline-block w-fit bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs font-semibold capitalize">{registration.status} </p>
+        <p className=" inline-block w-fit bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs font-semibold capitalize">{registration.status} </p>
 
         <div>
           <button onClick={()=>handleUpdate(registration)}
